@@ -1,0 +1,29 @@
+parameters:
+#    ibw_jobeet.example.class: Ibw\JobeetBundle\Example
+
+services:
+    ibw.jobeet.admin.category:
+        class: Ibw\JobeetBundle\Admin\CategoryAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Categories }
+        arguments:
+            - ~
+            - Ibw\JobeetBundle\Entity\Category
+            - 'IbwJobeetBundle:CategoryAdmin'
+ 
+    ibw.jobeet.admin.job:
+        class: Ibw\JobeetBundle\Admin\JobAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Jobs }
+        arguments:
+            - ~
+            - Ibw\JobeetBundle\Entity\Job
+            - 'IbwJobeetBundle:JobAdmin'
+    ibw.jobeet.admin.affiliate:
+        class: Ibw\JobeetBundle\Admin\AffiliateAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Affiliates }
+        arguments:
+            - ~
+            - Ibw\JobeetBundle\Entity\Affiliate
+            - 'IbwJobeetBundle:AffiliateAdmin'

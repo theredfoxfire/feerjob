@@ -1,0 +1,10 @@
+ibw_affiliate_new:
+    pattern:  /new
+    defaults: { _controller: "IbwJobeetBundle:Affiliate:new" }
+ibw_affiliate_create:
+    pattern: /create
+    defaults: { _controller: "IbwJobeetBundle:Affiliate:create" }
+    requirements: { _method: post }
+ibw_affiliate_wait:
+    pattern: /wait
+    defaults: { _controller: "IbwJobeetBundle:Affiliate:wait" }

@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: jobeet_test
+    database_user: root
+    database_password: '13264656#vL'
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    mailer_transport:  gmail
+    mailer_host:       ~
+    mailer_user:       vizzlearn@gmail.com
+    mailer_password:   13264656&vL
